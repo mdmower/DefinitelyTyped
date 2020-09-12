@@ -10,8 +10,8 @@ import jsbn = require("jsbn");
 
 export interface TeredoProperties {
   prefix: string;
-  server4: Address4;
-  client4: Address4;
+  server4: string;
+  client4: string;
   flags: string;
   coneNat: boolean;
   microsoft: {
@@ -229,7 +229,7 @@ export class Address6 {
   /** The first address in the range given by this address' subnet */
   startAddress(): Address6;
   /** Return the last two groups of this address as an IPv4 address string */
-  to4(): string;
+  to4(): Address4;
   /** Return the v4-in-v6 form of the address */
   to4in6(): string;
   /** Return a v6 6to4 address from a v6 v4inv6 address */

@@ -93,7 +93,7 @@ address6.binaryZeroPad();
 address6.canonicalForm();
 // $ExpectType string
 address6.decimal();
-// $ExpectType string
+// $ExpectType Address4
 address6.to4();
 // $ExpectType string
 address6.to4in6();
